@@ -1,0 +1,221 @@
+{
+    "generatedUtc": "2026-10-28T01:51:48.4138051Z",
+    "unityVersion": "6000.3.27f1",
+    "method": "Isolated PhysX at the production 0.005 second timestep. Saved forklift, pallet, cargo and rack prefabs. Pickup, carrying and release use actual contacts; no load parenting, attached carrying joints or pose writes after initial placement.",
+    "passed": true,
+    "checks": [
+        {
+            "name": "centred lever and interrupted input",
+            "passed": true,
+            "expectation": "Holding Left Shift starts at centre. Release closes the valve. An interrupted frame clears the lever and requires a fresh hold.",
+            "error": "",
+            "measurements": [
+                {
+                    "name": "centred held lever fork movement",
+                    "value": 0.00015686452388763428,
+                    "units": "m"
+                },
+                {
+                    "name": "centred held lever truck movement",
+                    "value": 0.00012492081441450864,
+                    "units": "m"
+                },
+                {
+                    "name": "released key with moving mouse valve",
+                    "value": 0.0,
+                    "units": "input"
+                },
+                {
+                    "name": "long interrupted frame valve",
+                    "value": 0.0,
+                    "units": "input"
+                },
+                {
+                    "name": "held key after interruption valve",
+                    "value": 0.0,
+                    "units": "input"
+                }
+            ]
+        },
+        {
+            "name": "position lever at 30 frames per second",
+            "passed": true,
+            "expectation": "The same lever position produces physical raising and lowering at each render cadence. A stationary off-centre lever maintains speed; centre and release hold the attained height.",
+            "error": "",
+            "measurements": [
+                {
+                    "name": "height drift with centred lever",
+                    "value": 0.009534716606140137,
+                    "units": "m"
+                },
+                {
+                    "name": "physical rise from upward mouse movement",
+                    "value": 0.6213278770446777,
+                    "units": "m"
+                },
+                {
+                    "name": "physical lowering from downward mouse movement",
+                    "value": 0.2741057276725769,
+                    "units": "m"
+                },
+                {
+                    "name": "truck movement without WASD",
+                    "value": 0.00017798750195652246,
+                    "units": "m"
+                }
+            ]
+        },
+        {
+            "name": "position lever at 60 frames per second",
+            "passed": true,
+            "expectation": "The same lever position produces physical raising and lowering at each render cadence. A stationary off-centre lever maintains speed; centre and release hold the attained height.",
+            "error": "",
+            "measurements": [
+                {
+                    "name": "height drift with centred lever",
+                    "value": 0.009534716606140137,
+                    "units": "m"
+                },
+                {
+                    "name": "physical rise from upward mouse movement",
+                    "value": 0.6213278770446777,
+                    "units": "m"
+                },
+                {
+                    "name": "physical lowering from downward mouse movement",
+                    "value": 0.2741057276725769,
+                    "units": "m"
+                },
+                {
+                    "name": "truck movement without WASD",
+                    "value": 0.00017798750195652246,
+                    "units": "m"
+                }
+            ]
+        },
+        {
+            "name": "position lever at 120 frames per second",
+            "passed": true,
+            "expectation": "The same lever position produces physical raising and lowering at each render cadence. A stationary off-centre lever maintains speed; centre and release hold the attained height.",
+            "error": "",
+            "measurements": [
+                {
+                    "name": "height drift with centred lever",
+                    "value": 0.009534716606140137,
+                    "units": "m"
+                },
+                {
+                    "name": "physical rise from upward mouse movement",
+                    "value": 0.6213278770446777,
+                    "units": "m"
+                },
+                {
+                    "name": "physical lowering from downward mouse movement",
+                    "value": 0.2741057276725769,
+                    "units": "m"
+                },
+                {
+                    "name": "truck movement without WASD",
+                    "value": 0.00017798750195652246,
+                    "units": "m"
+                }
+            ]
+        },
+        {
+            "name": "lever-controlled working-load pickup and setdown",
+            "passed": true,
+            "expectation": "After direct physical pocket insertion, the lever lifts and lowers an independent working load. Centring holds it; normal driving carries it through contact.",
+            "error": "",
+            "measurements": [
+                {
+                    "name": "initial gap from fork tips to pallet",
+                    "value": 0.44985079765319826,
+                    "units": "m"
+                },
+                {
+                    "name": "actual fork top at entry",
+                    "value": 0.07853691279888153,
+                    "units": "m"
+                },
+                {
+                    "name": "actual pocket lower surface",
+                    "value": 0.015875007957220079,
+                    "units": "m"
+                },
+                {
+                    "name": "actual pocket upper surface",
+                    "value": 0.10477499663829804,
+                    "units": "m"
+                },
+                {
+                    "name": "pallet displacement before lift",
+                    "value": 2.4502813289473126e-7,
+                    "units": "m"
+                },
+                {
+                    "name": "actual tine penetration beyond pallet front",
+                    "value": 1.0260863304138184,
+                    "units": "m"
+                },
+                {
+                    "name": "working load mouse lift",
+                    "value": 0.5324967503547669,
+                    "units": "m"
+                },
+                {
+                    "name": "setdown drift after fork withdrawal",
+                    "value": 4.650792106986046e-8,
+                    "units": "m"
+                }
+            ]
+        },
+        {
+            "name": "mouse control retains overload force limit",
+            "passed": true,
+            "expectation": "Upward mouse movement cannot bypass the finite hydraulic force when lifting a 3500 kg independent package.",
+            "error": "",
+            "measurements": [
+                {
+                    "name": "initial gap from fork tips to pallet",
+                    "value": 0.44985079765319826,
+                    "units": "m"
+                },
+                {
+                    "name": "actual fork top at entry",
+                    "value": 0.07853704690933228,
+                    "units": "m"
+                },
+                {
+                    "name": "actual pocket lower surface",
+                    "value": 0.015875156968832017,
+                    "units": "m"
+                },
+                {
+                    "name": "actual pocket upper surface",
+                    "value": 0.10477490723133087,
+                    "units": "m"
+                },
+                {
+                    "name": "pallet displacement before lift",
+                    "value": 0.0000020020120246044827,
+                    "units": "m"
+                },
+                {
+                    "name": "actual tine penetration beyond pallet front",
+                    "value": 1.0259451866149903,
+                    "units": "m"
+                },
+                {
+                    "name": "heavy load rise under mouse command",
+                    "value": -0.000004503875970840454,
+                    "units": "m"
+                },
+                {
+                    "name": "bounded hydraulic pressure",
+                    "value": 1.0,
+                    "units": "fraction"
+                }
+            ]
+        }
+    ]
+}

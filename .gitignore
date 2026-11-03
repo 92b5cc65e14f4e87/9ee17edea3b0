@@ -1,0 +1,14 @@
+node_modules/
+research/
+.DS_Store
+Thumbs.db
+unity/**/[Ll]ibrary/
+unity/**/[Tt]emp/
+unity/**/[Oo]bj/
+unity/**/[Ll]ogs/
+unity/**/[Uu]ser[Ss]ettings/
+unity/**/[Bb]uilds/
+unity/**/*.csproj
+unity/**/*.sln
+unity/**/*.user
+unity/**/.vs/

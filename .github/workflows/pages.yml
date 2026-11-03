@@ -1,0 +1,37 @@
+name: Publish receiving practice
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: receiving-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check receiving model and host
+        run: |
+          node tools/test-one-shift-inbound-model.cjs
+          node tools/test-one-shift-inbound-host.cjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: web
+      - name: Deploy receiving practice
+        id: deployment
+        uses: actions/deploy-pages@v4

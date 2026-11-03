@@ -1,0 +1,13 @@
+{
+  "name": "receiving-practice",
+  "version": "15.1.0",
+  "private": true,
+  "description": "Guided receiving practice in a playable warehouse",
+  "scripts": {
+    "test": "node tools/test-one-shift-inbound-model.cjs && node tools/test-one-shift-inbound-host.cjs",
+    "test:browser": "node tools/test-one-shift-inbound-browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
