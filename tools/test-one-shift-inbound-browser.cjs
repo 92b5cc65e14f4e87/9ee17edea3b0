@@ -93,7 +93,7 @@ async function pauseAndChoose(id){
   browser=await chromium.launch({headless:process.env.SHIFT_INBOUND_HEADED!=='1',channel:process.env.SHIFT_BROWSER_CHANNEL||'chrome',args:['--enable-gpu',...(process.platform==='win32'?['--use-angle=d3d11']:[])]});
   const context=await browser.newContext({viewport:{width:1280,height:720},deviceScaleFactor:1});page=await context.newPage();page.setDefaultTimeout(20000);
   page.on('console',m=>messages.push({type:m.type(),text:m.text()}));page.on('pageerror',e=>errors.push(e.message));
-  page.on('request',r=>{requests.push(r.url());if(/(^|\.)ethewillingham\.com$/i.test(new URL(r.url()).hostname))errors.push('Personal portfolio request: '+r.url());});
+  page.on('request',r=>{requests.push(r.url());if(/(^|\.)ethanwillingham\.com$/i.test(new URL(r.url()).hostname))errors.push('Personal portfolio request: '+r.url());});
   page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('/favicon.ico'))errors.push(r.status()+' '+r.url());});
   page.on('dialog',async dialog=>{errors.push('Unexpected browser dialog: '+dialog.message());await dialog.dismiss();});
   stage('Clean menus and first warehouse load');await page.goto(entry.href);
