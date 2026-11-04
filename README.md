@@ -2,7 +2,7 @@
 
 A guided warehouse game for trying receiving workflows with fictional deliveries.
 
-Review site: https://notacompany1.github.io/receiving-practice/
+Review site: https://ethan-willingham.github.io/receiving-practice/
 
 Choose Inbound, select a receiving method, then enter the warehouse. Walk, carry
 cartons and scan their physical labels. Receiving screens open on the handheld
