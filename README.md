@@ -3,7 +3,7 @@
 A guided warehouse game for learning Endpoint Cloud workflows with fictional
 deliveries. The current lessons cover inbound receiving.
 
-Review site: https://ethan-willingham.github.io/warehouse-preview-9ee17edea3b0/
+Review site: https://92b5cc65e14f4e87.github.io/9ee17edea3b0/
 
 Choose Inbound, select a receiving method, then enter the warehouse. Walk, carry
 cartons and scan their physical labels. Receiving screens open on the handheld
@@ -30,7 +30,7 @@ Serve `web/` with a static server, for example `python -m http.server 8765
 Run `npm test` for the receiving model and browser-host checks. For the actual
 gameplay check, install development dependencies with `npm install`, install
 Chrome, then run `npm run test:browser`. The browser test serves the app beneath
-`/warehouse-preview-9ee17edea3b0/` to exercise GitHub project-site paths. Its reports and
+`/9ee17edea3b0/` to exercise GitHub project-site paths. Its reports and
 screenshots are written to the ignored `research/` directory.
 
 Open the Unity project in Unity 6000.3.27f1 with Web Build Support. Read its

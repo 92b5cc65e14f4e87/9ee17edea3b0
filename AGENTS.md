@@ -38,7 +38,8 @@ Preserve unrelated working changes and do not commit credentials or local caches
 
 ## Public preview hosting
 
-The owner chose a public GitHub Pages preview on 2026-11-03. Keep the current
-random-suffix URL and the noindex, nofollow tag. The URL reduces casual discovery;
-the game and repository remain public. Do not enable metered hosting, billing,
+The owner chose a public GitHub Pages preview on 2026-11-03. Keep the random
+organization and repository names in the URL, plus the noindex, nofollow tag.
+The URL reduces casual discovery; the game and repository remain public.
+Do not enable metered hosting, billing,
 authentication or a custom domain without a new owner request.
