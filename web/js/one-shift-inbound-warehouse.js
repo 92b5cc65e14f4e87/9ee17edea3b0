@@ -182,7 +182,7 @@
       resize();
       window.createUnityInstance(canvas,{
         dataUrl:build+'.data.unityweb'+version,frameworkUrl:build+'.framework.js.unityweb'+version,codeUrl:build+'.wasm.unityweb'+version,
-        streamingAssetsUrl:'assets/one-shift-unity/StreamingAssets',companyName:'Receiving practice',productName:'Receiving practice',productVersion:'15',matchWebGLToCanvasSize:false,devicePixelRatio:1,
+        streamingAssetsUrl:'assets/one-shift-unity/StreamingAssets',companyName:'Endpoint Warehouse Simulator',productName:'Endpoint Warehouse Simulator',productVersion:'15',matchWebGLToCanvasSize:false,devicePixelRatio:1,
         onOneShiftStats:function (version,fps,longest,frames) { stage.dataset.buildVersion=String(version); stage.dataset.frames=String(frames); },onWarehouseHUD:onHUD,
         onOneShiftPreparation:function (completed,total,value) { if(value<0){error('Graphics could not be prepared. Try a browser with WebGL 2 enabled.');return;} graphicsReady=value===1; text(status,graphicsReady?'Your warehouse is ready':'Preparing the warehouse'); progress.value=graphicsReady?100:90+10*completed/Math.max(1,total);updateReady(); },
         onWarehousePreparation:function (value) { if(typeof value==='string'){try{value=JSON.parse(value);}catch(_){return;}} if(value&&value.detail)text(detail,value.detail); },

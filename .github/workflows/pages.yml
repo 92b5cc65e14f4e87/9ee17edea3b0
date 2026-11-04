@@ -1,4 +1,4 @@
-name: Publish receiving practice
+name: Publish Endpoint Warehouse Simulator
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: receiving-pages
+  group: warehouse-pages
   cancel-in-progress: false
 
 jobs:
@@ -32,6 +32,6 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: web
-      - name: Deploy receiving practice
+      - name: Deploy Endpoint Warehouse Simulator
         id: deployment
         uses: actions/deploy-pages@v4

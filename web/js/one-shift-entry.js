@@ -11,12 +11,12 @@
   }
   var inboundLoading;
   window.loadInboundWarehouse = function () {
-    if (!inboundLoading) inboundLoading = script('js/demo-activity.js?v=1').then(function () { return script('js/one-shift-inbound-warehouse.js?v=15.1'); });
+    if (!inboundLoading) inboundLoading = script('js/demo-activity.js?v=1').then(function () { return script('js/one-shift-inbound-warehouse.js?v=15.2'); });
     return inboundLoading;
   };
   async function boot() {
     await script('js/one-shift-inbound-model.js?v=15');
-    await script('js/one-shift-inbound.js?v=15');
+    await script('js/one-shift-inbound.js?v=15.2');
   }
   boot().catch(function () {
     document.body.className = 'inbound-page';

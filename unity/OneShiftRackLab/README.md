@@ -1,6 +1,6 @@
 # Receiving warehouse source
 
-This Unity 6.3 URP project supplies the playable warehouse for Receiving practice.
+This Unity 6.3 URP project supplies the playable warehouse for Endpoint Warehouse Simulator.
 Open it with Unity 6000.3.27f1 and Web Build Support. The browser frontend is in
 ../../web and always selects the isolated receiving mode. Read ../../README.md,
 ../../docs/RECEIVING.md and WAREHOUSE_LIGHTING.md before changes.

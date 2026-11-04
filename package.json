@@ -1,8 +1,8 @@
 {
-  "name": "receiving-practice",
-  "version": "15.1.0",
+  "name": "endpoint-warehouse-simulator",
+  "version": "15.2.0",
   "private": true,
-  "description": "Guided receiving practice in a playable warehouse",
+  "description": "A playable warehouse simulator for learning Endpoint Cloud workflows",
   "scripts": {
     "test": "node tools/test-one-shift-inbound-model.cjs && node tools/test-one-shift-inbound-host.cjs",
     "test:browser": "node tools/test-one-shift-inbound-browser.cjs"

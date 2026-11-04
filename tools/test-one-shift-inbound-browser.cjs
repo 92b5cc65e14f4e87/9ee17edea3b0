@@ -9,7 +9,7 @@ const path=require('node:path');
 const {chromium}=require('playwright');
 const {classifyUnityConsole}=require('./one-shift-unity-console.cjs');
 const root=path.resolve(__dirname,'..');
-const webRoot=path.join(root,'web'),projectPrefix='/receiving-practice/';
+const webRoot=path.join(root,'web'),projectPrefix='/warehouse-preview-9ee17edea3b0/';
 // The local run deliberately uses a project subpath, matching GitHub Pages.
 // Set SHIFT_INBOUND_BASE_URL to a published project URL to run the same suite.
 const configuredBase=process.env.SHIFT_INBOUND_BASE_URL;

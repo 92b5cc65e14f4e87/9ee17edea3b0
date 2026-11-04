@@ -1,4 +1,4 @@
-# Receiving practice
+# Inbound receiving in Endpoint Warehouse Simulator
 
 This independent app opens Home > Inbound > a receiving method, then a playable
 warehouse. The model, interface, native player and assets are owned by this

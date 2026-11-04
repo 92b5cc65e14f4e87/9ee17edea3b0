@@ -1,8 +1,9 @@
-# Receiving practice
+# Endpoint Warehouse Simulator
 
-A guided warehouse game for trying receiving workflows with fictional deliveries.
+A guided warehouse game for learning Endpoint Cloud workflows with fictional
+deliveries. The current lessons cover inbound receiving.
 
-Review site: https://ethan-willingham.github.io/receiving-practice/
+Review site: https://ethan-willingham.github.io/warehouse-preview-9ee17edea3b0/
 
 Choose Inbound, select a receiving method, then enter the warehouse. Walk, carry
 cartons and scan their physical labels. Receiving screens open on the handheld
@@ -29,7 +30,7 @@ Serve `web/` with a static server, for example `python -m http.server 8765
 Run `npm test` for the receiving model and browser-host checks. For the actual
 gameplay check, install development dependencies with `npm install`, install
 Chrome, then run `npm run test:browser`. The browser test serves the app beneath
-`/receiving-practice/` to exercise GitHub project-site paths. Its reports and
+`/warehouse-preview-9ee17edea3b0/` to exercise GitHub project-site paths. Its reports and
 screenshots are written to the ignored `research/` directory.
 
 Open the Unity project in Unity 6000.3.27f1 with Web Build Support. Read its
@@ -40,7 +41,7 @@ a fresh export and the real browser check before release.
 
 ## Publish refinements
 
-Push reviewed changes to `main`. The Publish receiving practice workflow checks
+Push reviewed changes to `main`. The Publish Endpoint Warehouse Simulator workflow checks
 the model and host, then deploys only `web/` to GitHub Pages. Source files and
 Unity project assets remain in this repository without being copied into the
 website artifact. Keep this repository's Pages source set to GitHub Actions.

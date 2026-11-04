@@ -242,7 +242,7 @@
       if(reset&&window.InboundWarehouse)window.InboundWarehouse.update(current.state,instruction(),true);
       if(focus&&scannerDialog.open){var heading=document.getElementById('in-step-title');if(heading)heading.focus();}
     }else{main.innerHTML=route==='inbound'?inbound():route==='mobile'?mobile():home();if(focus){var title=main.querySelector('h1');title.tabIndex=-1;title.focus();}}
-    document.title=current?titles[id]+' | Receiving practice':'Receiving practice';
+    document.title=current?titles[id]+' | Endpoint Warehouse Simulator':'Endpoint Warehouse Simulator';
   }
   function next(step) { current.step = step == null ? current.step + 1 : step; current.message = ''; render(true); }
   function receiptResult(result) {

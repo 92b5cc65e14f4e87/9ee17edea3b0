@@ -1,6 +1,7 @@
-# Receiving practice
+# Endpoint Warehouse Simulator
 
-This is the standalone receiving training app. Its deployable root is `web/`.
+This is the standalone Endpoint Warehouse Simulator. Its first module is inbound
+receiving. Its deployable root is `web/`.
 Read `README.md` and `docs/RECEIVING.md` before changing behavior. For native scene
 work, also read `unity/OneShiftRackLab/README.md` and `WAREHOUSE_LIGHTING.md`.
 
@@ -34,3 +35,10 @@ not change the already compiled player.
 
 Keep the stable review URL. The workflow deploys only `web/` when `main` changes.
 Preserve unrelated working changes and do not commit credentials or local caches.
+
+## Public preview hosting
+
+The owner chose a public GitHub Pages preview on 2026-11-03. Keep the current
+random-suffix URL and the noindex, nofollow tag. The URL reduces casual discovery;
+the game and repository remain public. Do not enable metered hosting, billing,
+authentication or a custom domain without a new owner request.
